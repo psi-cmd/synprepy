@@ -1,0 +1,25 @@
+{
+  "root": "/public/home/zhangbc/DCU_test/Data/DataBase",
+  "rxn_data_tsv_file_name": "rxn_sample_138262.tsv",
+  "rid_with_rxn_template_tsv_file_name": "rid_with_rxn_templates.tsv",
+  "rxn_centralized_template_tsv_file_name": "rxn_centralized_templates.tsv",
+  "rxn_extended_template_tsv_file_name": "rxn_extended_templates.tsv",
+  "rid_with_tid_tsv_file_name": "rid_and_tid.tsv",
+  "rxn_centralized_template_selector_config": {
+    "root": "/public/home/zhangbc/DCU_test/Data/RxnTemplateSelector",
+    "train_rids_file_name": "train_rids.tsv",
+    "test_rids_file_name": "test_rids.tsv",
+    "train_temp_dir_name": "train_temp",
+    "test_temp_dir_name": "test_temp",
+    "model_dir_name": "model",
+    "min_num_covered_rxns_by_rxn_centralized_template": 5,
+    "filter_tids_file_name": "filter_tids.txt",
+    "device": "cuda",
+    "batch_size": 2000,
+    "epoch_num": 20,
+    "lr_start": 0.0005,
+    "lr_end": 1e-7
+  },
+
+  "min_num_covered_rxns_by_rxn_extended_template": 50
+}
